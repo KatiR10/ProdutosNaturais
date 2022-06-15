@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Produtos Naturais</title>
+    <meta charset="utf-8" />
+    <meta http-arquiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&family=Sarala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+
+
+    <header class="banner">
+
+
+
+        <div class="logoed">
+            <img src="./img/logo.png" width="150px">
+        </div>
+
+        <div class="procurar">
+            <img src="./img/lupa.png" width="40px">
+        </div>
+
+    </header>
+    <nav class="menu">
+        <div class="quadro1">
+            <a href="produtos.html" class="formataLink">Produtos</a>
+        </div>
+        <div class="quadro2">
+            <a href="" class="formataLink">Sobre</a>
+        </div>
+        <div class="quadro3">
+            <a href="" class="formataLink">Fale Conosco</a>
+        </div>
+
+    </nav>
+    <div class="containerslide">
+
+
+        <div class="mySlides cont">
+            <div class="number">1/3</div>
+            <img src="./img/banner1.jpg" alt="Almofariz com pistilo para misturas"
+                style=" width: 100%; height: 450px; object-fit: cover ;">
+        </div>
+
+        <div class="mySlides cont">
+            <div class="number">2/3</div>
+            <img src="./img/banner2.jpg" alt="Especiarias" style=" width: 100%; height: 450px; object-fit: cover ;">
+        </div>
+        <div class="mySlides cont">
+            <div class="number">3/3</div>
+            <img src="./img/banner3.jpg" alt="Café diário" style=" width: 100%; height: 450px; object-fit: cover ;">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+        <div class="dotcontainer">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
+        </div>
+    </div>
+
+
+    <div class="produto">
+        <div class="posProduto">
+            <a href="#">
+                <img src="./img/nozes.jpg" class="imagens" alt="Nozes Pecan">
+            </a>
+            <div class="description">
+                <h3>Nozes Pecas 100g </h3>
+
+                <h4>R$11,50</h4>
+            </div>
+        </div>
+        <div class="posProduto">
+            <a href="#">
+                <img src="./img/ervadoce.jpg" class="imagens" alt="Erva Doce">
+            </a>
+            <div class="description">
+                <h3>Erva Doce 100g</h3>
+
+                <h4>R$5,00</h4>
+            </div>
+        </div>
+        <div class="posProduto">
+            <a href="#">
+                <img src="./img/castanha.png" class="imagens" alt="Castanha de Caju">
+            </a>
+            <div class="description">
+                <h3>Castanha Caju 100g<h3>
+
+                        <h4>R$9,00</h4>
+            </div>
+        </div>
+    
+        <div class="receba">
+
+<div onload="inicializaJS()" >
+            <form action="teste.html" method="post" name="Formulário" onsubmit=" return validaDados()">
+                <h2 class="ofertas">Receba as Nossas Ofertas</h2>
+
+
+                <div class="receba2">
+                    <label for="lblnome">Nome*</label>
+                    <input type="text" name="txtnome" id="txtnome" />
+                    <span class="msg-erro msg-nome"></span>
+                </div>
+
+
+                <div class="receba2">
+                    <label for="lblemail">E-mail*</label>
+                    <input type="text" name="txtemail" id="txtemail">
+                    <span class="msg-erro msg-email"></span>
+                </div>
+
+
+                <div class="receba2">
+                    <label for="lbltelefone">Telefone*</label>
+                    <input type="text" id="txttelefone">
+                    <span class="msg-erro msg-telefone"></span>
+                </div>
+
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+
+
+
+<footer>
+    <span class="rodape">Todos os direitos reservados.</span>
+</footer>
+
+
+</html>

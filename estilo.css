@@ -1,0 +1,287 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Sarala', sans-serif;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #AFDB9A;
+    align-items: center;
+    opacity: 0.8;
+    height: 100px;
+}
+
+.logoed {
+    margin-left: 40%;
+}
+
+.procurar {
+    display: flex;
+    margin-left: 20%;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.formataLink {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    align-items: center;
+}
+
+a:hover {
+    color: #3B5C20;
+    border-bottom: 3px solid #3B5C20;
+    ;
+}
+
+.containerslide {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.dotcontainer {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.number {
+    font-size: 10px;
+    color: white;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    display: inline-block;
+    background-color: #3B5C20;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.quadro1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82AE5F;
+    width: 100%;
+    height: 100%;
+    margin: 0.5px;
+}
+
+.quadro2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7E7647;
+    width: 100%;
+    height: 100%;
+}
+
+.quadro3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #717C2A;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+.position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.produto {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 5%;
+}
+
+.imagens {
+    width: 184px;
+    height: 234px;
+    margin-right: 20px;
+}
+
+
+
+.description {
+    background-color: #A1B981;
+    text-align: center;
+
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+
+.receba {
+    width: 50%;
+    color: white;
+    background-color: #7E7647;
+    text-align: center;
+
+}
+
+.receba2 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.ofertas {
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    width: 70%;
+    padding: 12px 15px;
+    margin: 10px 20px;
+    box-sizing: border-box;
+
+}
+
+[type="submit"]{
+    background-color: #82AE5F;
+   color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+[type="submit"]:hover {
+    background-color: #3B5C20;
+    cursor: pointer;
+}
+
+.msg-erro{
+    color: #daffd8;
+}
+
+.bannerProd {
+    display: flex;
+    justify-content: center;
+    background-color: #82AE5F;
+    align-items: center;
+    opacity: 0.8;
+    height: 90px;
+
+}
+
+.textProd {
+    color: white;
+    text-align: center;
+}
+
+.prodDiversos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 8%;
+
+}
+
+.positionProd {
+    margin-bottom: 15px;
+}
+
+.imgProd {
+    width: 245px;
+    height: 260px;
+    margin-right: 20px;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
